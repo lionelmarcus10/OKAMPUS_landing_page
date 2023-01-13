@@ -65,7 +65,7 @@ button:hover {
       <p class="message-impact text-xl sm:text-2xl md:text-4xl lg:text-4xl">Framer For StartUps</p>
       <h1 class="w-9/12 text-5xl scale-sm sm:text-7xl -sm:text-slate-50 message-impact md:text-7xl lg:text-8xl">Big <span class="text-blue-500">launch. <br></span> Small team.</h1>
       <p class="py-5 text-white font-medium text-3xl sm:text-4xl md:font-bold max-w-lg">Announce your product with a bang without needing an entire marketing team and months of preparation.</p>
-      <button class="flex flex-direction flex-nowrap space-x-2 sticky top-0"> <p class="sticky top-0">Apply Online</p> <ArrowRightIcon/> </button>
+      <button class="flex flex-direction flex-nowrap space-x-2"> <p>Apply Online</p> <ArrowRightIcon/> </button>
     </div>
     <div class="flex flex-row space-x-5">
       <FacebookIcon/>
@@ -74,9 +74,19 @@ button:hover {
     </div>
   </div>
 
+  <div class="flex flex-col items-center bg-zinc-50 sm:px-8 lg:px-36 py-24">
+    <h4 class="text-slate-400 font-bold self-center sm:text-2xl md:pb-12 text-xl  message-impact">ILS NOUS ONT FAIT CONFIANCE</h4>
+    <div class="place-content-center grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 place-items-center px-12 md:px-16 space-y-8">
+      <img src="../assets/asas_pan.png" alt="" class="px-3">
+      <img src="../assets/logosite.svg" alt=""  class="px-3">
+      <img src="../assets/efrei.png" alt=""  class="px-3">
+      <img src="../assets/logosite.svg" alt=""  class="px-3">
+    </div>
+  </div>
+
   <!-- Part 2 -->
   <div class="bg-zinc-50 flex flex-col pt-8 pb-16 bg-slate-50">
-    <h4 class="text-slate-400 font-bold self-center sm:text-2xl md:pb-12 text-xl  message-impact">FEATURED UNIVERSITIES</h4>
+    <h4 class="text-slate-400 font-bold self-center sm:text-2xl md:pb-12 text-xl  message-impact">FEATURES</h4>
     <div class="py-5">
       <Caroussel_1/>
     </div>
@@ -88,7 +98,7 @@ button:hover {
   <div class="flex flex-col items-center bg-zinc-50 sm:px-8 lg:px-36 pb-24">
 
     <!-- Sous partie 1 -->
-    <Title title="News" :text="News"/>
+    <Title title="News" :text="News" class="message-impact"/>
 
     <div class="space-y-8 md:space-y-12">
         <!-- Sous partie 2 -->
@@ -110,7 +120,7 @@ button:hover {
   <div class="">
 
      <!-- Sous partie 1 -->
-     <Title title="Testimonial" :text="Services"/>
+     <Title title="Testimonial" :text="Services" class="message-impact"/>
 
     <!-- Sous partie 2 -->
     <div class="mx-8 sm:mx-28 md:mx-36 space-y-12 lg:mx-32 xl:mx-[250px] 2xl:mx-[350px] ">
