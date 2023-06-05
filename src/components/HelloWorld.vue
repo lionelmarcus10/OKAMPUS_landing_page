@@ -53,93 +53,106 @@ button:hover {
 .message-impact{
   font-family: "Gordita Bold", sans-serif;
 }
+
+div.stickyly {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
 </style>
 
 <template>
 
-  <!-- Navigation-->
- 
   <!-- Part 1 -->
   <div class="first_part py-36 sm:py-56 px-8 sm:px-28 md:px-36 space-y-12 lg:px-32 xl:px-[250px] 2xl:px-[350px]">
-    <div class="flex flex-col items-start space-y-8 md:space-y-12">
-      <p class="message-impact text-xl sm:text-2xl md:text-4xl lg:text-4xl">Framer For StartUps</p>
-      <h1 class="w-9/12 text-5xl scale-sm sm:text-7xl -sm:text-slate-50 message-impact md:text-7xl lg:text-8xl">Big <span class="text-blue-500">launch. <br></span> Small team.</h1>
-      <p class="py-5 text-white font-medium text-3xl sm:text-4xl md:font-bold max-w-lg">Announce your product with a bang without needing an entire marketing team and months of preparation.</p>
-      <button class="flex flex-direction flex-nowrap space-x-2"> <p>Apply Online</p> <ArrowRightIcon/> </button>
-    </div>
-    <div class="flex flex-row space-x-5">
-      <FacebookIcon/>
-      <InstagramIcon/>
-      <LinkedinIcon/>
-    </div>
-  </div>
-
-  <div class="flex flex-col items-center bg-zinc-50 sm:px-8 lg:px-36 py-24">
-    <h4 class="text-slate-400 font-bold self-center sm:text-2xl md:pb-12 text-xl  message-impact">ILS NOUS ONT FAIT CONFIANCE</h4>
-    <div class="place-content-center grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 place-items-center px-12 md:px-16 space-y-8">
-      <img src="../assets/asas_pan.png" alt="" class="px-3">
-      <img src="../assets/logosite.svg" alt=""  class="px-3">
-      <img src="../assets/efrei.png" alt=""  class="px-3">
-      <img src="../assets/logosite.svg" alt=""  class="px-3">
-    </div>
-  </div>
-
-  <!-- Part 2 -->
-  <div class="bg-zinc-50 flex flex-col pt-8 pb-16 bg-slate-50">
-    <h4 class="text-slate-400 font-bold self-center sm:text-2xl md:pb-12 text-xl  message-impact">FEATURES</h4>
-    <div class="py-5">
-      <Caroussel_1/>
-    </div>
-  </div>
-
-
-  <!-- Part 4 -->
-
-  <div class="flex flex-col items-center bg-zinc-50 sm:px-8 lg:px-36 pb-24">
-
-    <!-- Sous partie 1 -->
-    <Title title="News" :text="News" class="message-impact"/>
-
-    <div class="space-y-8 md:space-y-12">
-        <!-- Sous partie 2 -->
-      <div class="place-content-center grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 place-items-center px-12 md:px-16">
-        <!-- 3 cards -->
-        <NewsCardVue title="Come On In. The Water's Fine (Mostly)" date="17 Apr 2022" class="font-bold" fillcolor="#000" :size="48"/>
-        <NewsCardVue title="Come On In. The Water's Fine (Mostly)" date="17 Apr 2022" class="font-bold" fillcolor="#000" :size="48"/>
-        <NewsCardVue title="Come On In. The Water's Fine (Mostly)" date="17 Apr 2022" class="font-bold" fillcolor="#000" :size="48"/>
+      <div class="flex flex-col items-start space-y-8 md:space-y-12">
+        <p class="message-impact text-xl sm:text-2xl md:text-4xl lg:text-4xl">Framer For StartUps</p>
+        <h1 class="w-9/12 text-5xl scale-sm sm:text-7xl -sm:text-slate-50 message-impact md:text-7xl lg:text-8xl">Big <span class="text-blue-500">launch. <br></span> Small team.</h1>
+        <p class="py-5 text-white font-medium text-3xl sm:text-4xl md:font-bold max-w-lg sticky">Announce your product with a bang without needing an entire marketing team and months of preparation.</p>
+        <button class="flex flex-direction flex-nowrap space-x-2"> <p>Apply Online</p> <ArrowRightIcon/> </button>
       </div>
-
-      <div class="py-12 flex justify-center">
-        <button class="flex flex-direction flex-nowrap space-x-2"> <p>Join Here</p> <ArrowRightIcon/> </button>
+      <div class="flex flex-row space-x-5">
+        <FacebookIcon/>
+        <InstagramIcon/>
+        <LinkedinIcon/>
       </div>
     </div>
-  
-  </div>
-
-  <!-- Part 7 -->
-  <div class="">
-
-     <!-- Sous partie 1 -->
-     <Title title="Testimonial" :text="Services" class="message-impact"/>
-
-    <!-- Sous partie 2 -->
-    <div class="mx-8 sm:mx-28 md:mx-36 space-y-12 lg:mx-32 xl:mx-[250px] 2xl:mx-[350px] ">
-      <!-- caroussel multiple card MANGERKOI style -->
-      <Caroussel_2/>
-    </div>
-
-  </div>
-
-  <!-- Part 8 Appel à l'action -->
-  <div class="mx-auto bg-zinc-100 flex flex-row px-8 space-x-2 sm:px-28 sm:space-x-2 md:pl-36 md:pr-32 xl:px-64 2xl:px-[380px] justify-between py-14">
-    <h2 class="font-bold text-xl md:text-3xl">Ready to chase your dreams ? </h2>
-    <button class="flex flex-row flex-nowrap space-x-4"> <p class="text-sm">Apply Online</p> <ArrowRightIcon/> </button>
-  </div>
-  <!-- Formulaire -->
-  <div class="">
     
+  <div class="">
+    <!-- Call to action 
+    <div class="sticky top-12 -bg-zinc-50 bg-transparent px-8 sm:px-28 md:px-36 lg:px-32 xl:px-[250px] 2xl:px-[350px] ">
+      <Button class="">Call to action</Button>
+    </div>
+    -->
+
+    <!-- Part 2 -->
+    <div class="flex flex-col items-start bg-zinc-50 sm:px-8 lg:px-36 py-24">
+      <h4 class="text-slate-400 font-bold self-center sm:text-2xl md:pb-12 text-xl  message-impact">ILS NOUS ONT FAIT CONFIANCE</h4>
+      <div class="place-content-center grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 place-items-center px-12 md:px-16 space-y-8">
+        <img src="../assets/asas_pan.png" alt="" class="px-3">
+        <img src="../assets/logosite.svg" alt=""  class="px-3">
+        <img src="../assets/efrei.png" alt=""  class="px-3">
+        <img src="../assets/logosite.svg" alt=""  class="px-3">
+      </div>
+    </div>
+
+    <!-- Part 3 -->
+    <div class="bg-zinc-50 flex flex-col pt-8 pb-16 bg-slate-50">
+      <h4 class="text-slate-400 font-bold self-center sm:text-2xl md:pb-12 text-xl  message-impact">FEATURES</h4>
+      <div class="py-5">
+        <Caroussel_1/>
+      </div>
+    </div>
+
+
+    <!-- Part 4 -->
+
+    <div class="flex flex-col items-center bg-zinc-50 sm:px-8 lg:px-36 pb-24">
+
+      <!-- Sous partie 1 -->
+      <Title title="News" :text="News" class="message-impact"/>
+
+      <div class="space-y-8 md:space-y-12">
+          <!-- Sous partie 2 -->
+        <div class="place-content-center grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 place-items-center px-12 md:px-16">
+          <!-- 3 cards -->
+          <NewsCardVue title="Come On In. The Water's Fine (Mostly)" date="17 Apr 2022" class="font-bold" fillcolor="#000" :size="48"/>
+          <NewsCardVue title="Come On In. The Water's Fine (Mostly)" date="17 Apr 2022" class="font-bold" fillcolor="#000" :size="48"/>
+          <NewsCardVue title="Come On In. The Water's Fine (Mostly)" date="17 Apr 2022" class="font-bold" fillcolor="#000" :size="48"/>
+        </div>
+
+        <div class="py-12 flex justify-center">
+          <button class="flex flex-direction flex-nowrap space-x-2"> <p>Join Here</p> <ArrowRightIcon/> </button>
+        </div>
+      </div>
+    
+    </div>
+
+    <!-- Part 7 -->
+    <div class="">
+
+      <!-- Sous partie 1 -->
+      <Title title="Testimonial" :text="Services" class="message-impact"/>
+
+      <!-- Sous partie 2 -->
+      <div class="mx-8 sm:mx-28 md:mx-36 space-y-12 lg:mx-32 xl:mx-[250px] 2xl:mx-[350px] ">
+        <!-- caroussel multiple card MANGERKOI style -->
+        <Caroussel_2/>
+      </div>
+
+    </div>
+
+    <!-- Part 8 Appel à l'action -->
+    <div class="mx-auto bg-zinc-100 flex flex-row px-8 space-x-2 sm:px-28 sm:space-x-2 md:pl-36 md:pr-32 xl:px-64 2xl:px-[380px] justify-between py-14">
+      <h2 class="font-bold text-xl md:text-3xl">Ready to chase your dreams ? </h2>
+      <button class="flex flex-row flex-nowrap space-x-4"> <p class="text-sm">Apply Online</p> <ArrowRightIcon/> </button>
+    </div>
+    <!-- Formulaire -->
+    <div class="">
+      
+    </div>
+    <!-- Footer -->
+    <FooterVue/>
   </div>
-  <!-- Footer -->
-  <FooterVue/>
 </template>
 
